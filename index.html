@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Consultant</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/devchallenges.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="col">
+                <h1 class="logo">This Interior</h1>
+            </div>
+            <div class="col">
+                <div class="nav-icon" onclick="animateIcon(this)">
+                    <div class="icon-dash-1"></div>
+                    <div class="icon-dash-2"></div>
+                    <div class="icon-dash-3"></div>
+                </div>
+                <div class="overlay" id="myNav">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="http://#" class="active">Home</a></li>
+                            <li><a href="http://#">Collection</a></li>
+                            <li><a href="http://#">About</a></li>
+                            <li><a href="http://#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="col-40">
+                <h2 class="title">Modern interior</h2>
+                <p class="sub-title">A full-Service residential & commercial interior design and staging company
+                    offering professional
+                    organizing & eco-services.</p>
+                <a href="http://" class="btn">Read more <span class="material-icons">&#xe8e4;</span></a>
+            </div>
+            <div class="col-60">
+                <img src="./img/photo1.png" alt="" srcset="" class="photo-project">
+                <div class="card">
+                    <div class="perfil">
+                        <img src="./img/photo2.png" alt="" srcset="">
+                        <div class="information">
+                            <p class="name">Aliza Webber</p>
+                            <p class="role">Interior designer</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        Designed in 2020 by Aliza Webber
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="container">
+        <p>created by <a href="https://github.com/arthurstofeles" target="_blank">Athur Stofeles</a> - devChallenges.io
+        </p>
+    </footer>
+    <script>
+        const animateIcon = (icon) => {
+            icon.classList.toggle("change");
+            document.getElementById("myNav").classList.toggle("changer")
+        }
+    </script>
+</body>
+
+</html>

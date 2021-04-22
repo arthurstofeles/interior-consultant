@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #181719;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container {
+    max-width: 1286px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    max-width: 50%;
+    width: 100%;
+}
+
+.col-60 {
+    max-width: 60%;
+    position: relative;
+}
+
+.col-40 {
+    max-width: 40%;
+}
+
+header {
+    padding-top: 42px;
+    padding-bottom: 170px;
+}
+
+.logo {
+    font-family: 'Crimson Pro', serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 8px;
+    box-sizing: border-box;
+    max-width: 104px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;     
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-bottom: 8px;
+}
+
+.menu li a.active {
+    border-bottom: 2px solid #FFFFFF;;
+}
+
+/* Animated Icon Nav */
+.nav-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.icon-dash-1, .icon-dash-2, .icon-dash-3 {
+    width: 35px;
+    height: 5px;
+    background-color: #F2F2F2;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .icon-dash-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .icon-dash-2 {
+    opacity: 0;
+}
+
+.change .icon-dash-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+main {
+    padding-bottom: 230px;
+}
+
+.title {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.btn .material-icons {
+    margin-left: 14px;
+}
+
+.photo-project {
+    max-width: 737px;
+    max-height: 555px;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    padding: 18px 26px 36px 26px;
+    max-width: 410px;
+    position: absolute;
+    right: 0;
+    bottom: -111px;
+    margin-right: 32px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.perfil img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 37px;
+    margin-right: 19px;
+}
+
+.perfil .name {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+}
+
+.perfil .role {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+.description {
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+footer p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+footer a {
+    color: #A9A9A9;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-icon {
+      display: block;
+      z-index: 999;
+      position: absolute;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .changer {
+        display: block;
+    }
+
+}
