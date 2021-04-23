@@ -80,8 +80,12 @@ header {
     padding-bottom: 8px;
 }
 
+.menu li a:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
 .menu li a.active {
-    border-bottom: 2px solid #FFFFFF;;
+    border-bottom: 2px solid #FFFFFF;
 }
 
 /* Animated Icon Nav */
@@ -148,6 +152,11 @@ main {
 
 .btn .material-icons {
     margin-left: 14px;
+    transition: transform 0.3s;
+}
+
+.btn:hover .material-icons {
+    transform: scalex(1.5);
 }
 
 .photo-project {
@@ -250,7 +259,6 @@ footer a {
 
     .btn {
         font-size: 14px;
-        line-height: 17px;
     }
     .description {
         font-size: 18px;
@@ -259,11 +267,8 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        padding-top: 25.5px;
-    }
 
-    .container {
+       .container {
         padding: 0 12px;
     }
 
@@ -279,7 +284,7 @@ footer a {
     .nav-icon.change {
         position: fixed;
         right: 12px;
-        top: 30px;
+        top: 24px;
     }
 
     .overlay {
@@ -311,12 +316,65 @@ footer a {
 
     .menu {
         flex-direction: column;
-        height: 50%;
         justify-content: space-evenly;
     }
 
-    .menu li a {
+    .menu li {
         margin-bottom: 32px;
     }
+}
 
+@media screen and (max-width: 678px) {
+
+    header {
+        padding-top: 19px;
+        padding-bottom: 38px;
+    }
+
+    main {
+        padding-bottom: 147px;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+
+    .col-40,
+    .col-60 {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .title,
+    .sub-title {
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        margin-bottom: 37px;
+    }
+
+    .card {
+        margin-right: 11px;
+        padding: 16px 71px 25px 19px;
+        max-width: 300px;
+    }
+
+    .perfil img {
+        max-width: 36px;
+        max-height: 36px;
+        border-radius: 37px;
+        margin-right: 14px;
+    }
+
+    .perfil .name {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 5px;
+    }
+
+    .perfil .role {
+        font-size: 10px;
+        line-height: 12px;
+    }
 }
